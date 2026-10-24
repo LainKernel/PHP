@@ -1,0 +1,28 @@
+<?php
+$day = 2;
+
+?>
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Конструкция switch</title>
+</head>
+<body>
+	<h1>Конструкция switch</h1>
+	<?php
+    switch(true){
+        case ($day <= 5 and $day >= 1 ):
+            echo 'Это рабочий день';
+            break;
+        case ($day == 6 or $day == 7):
+            echo 'Это выходной день';
+            break;
+        default:
+            echo 'Неизвестный день';
+    }
+	?>
+
+</body>
+</html>
